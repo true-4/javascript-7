@@ -17,3 +17,21 @@ function formatName(name) {
   return firstLit + restLit
 }
 console.log(formatName('alEX'))
+
+// 5
+function countError(text) {
+  const lowerCaseText = text.toLowerCase().replace('.','')
+  const words = lowerCaseText.split(/\s+/)
+
+  let count = 0
+
+  for (let word of words) {
+    if (word === 'error') {
+      count++
+    }
+  }
+  return count
+}
+
+console.log(countError("System error. Another ERROR occurred."))
+console.log(countError("No errors here."))
