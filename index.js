@@ -35,3 +35,13 @@ function countError(text) {
 
 console.log(countError("System error. Another ERROR occurred."))
 console.log(countError("No errors here."))
+
+// 6
+function replaceEmailDomains(emails) {
+  const newEm = emails.replaceAll('@gmail.com', '@example.com')
+  return newEm
+}
+
+console.log(replaceEmailDomains('user1@gmail.com'))
+console.log(replaceEmailDomains('user1@gmail.com; user2@gmail.com'))
+console.log(replaceEmailDomains('admin@mail.ru; user@gmail.com'))
