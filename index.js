@@ -54,3 +54,12 @@ function formatDate(dateStr) {
 console.log(formatDate('2025-05-24'))
 console.log(formatDate('1999-01-01'))
 console.log(formatDate('2000-12-31'))
+
+// 8
+function formatNumber(num) {
+  return Number(num.toFixed(2))
+}
+
+console.log(formatNumber(1234.56789))
+console.log(formatNumber(0.1 + 0.2))
+console.log(formatNumber(10))
