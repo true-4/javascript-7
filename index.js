@@ -45,3 +45,12 @@ function replaceEmailDomains(emails) {
 console.log(replaceEmailDomains('user1@gmail.com'))
 console.log(replaceEmailDomains('user1@gmail.com; user2@gmail.com'))
 console.log(replaceEmailDomains('admin@mail.ru; user@gmail.com'))
+
+// 7
+function formatDate(dateStr) {
+  return dateStr.split('-').reverse().join('.')
+}
+
+console.log(formatDate('2025-05-24'))
+console.log(formatDate('1999-01-01'))
+console.log(formatDate('2000-12-31'))
