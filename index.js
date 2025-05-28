@@ -119,3 +119,10 @@ const car = {
 }
 
 console.log(String(car) + ' e46')
+
+// 14
+let a = { valueOf() { return 1; }};
+let b = { toString() { return "1"; } };
+
+console.log(a == 1); // == неявно приводит типы данных в результате получем true
+console.log(b == 1); // == неявно приводит типы данных в результате получем true
