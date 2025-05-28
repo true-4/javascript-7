@@ -104,3 +104,18 @@ const user = {
 }
 
 console.log(user + 10)
+
+// 13
+const car = {
+  brand: 'BMW',
+  model: 'M3',
+  year: 2002,
+  toString() {
+    return this.brand
+  },
+  valueOf() {
+    return this.year
+  },
+}
+
+console.log(String(car) + ' e46')
