@@ -90,3 +90,17 @@ const parseAndRound = (value) => {
 console.log(parseAndRound("42.7"))
 console.log(parseAndRound("5.2"))
 console.log(parseAndRound("hello"))
+
+// 12
+const user = {
+  name: 'Vlad',
+  age: 23,
+  [Symbol.toPrimitive] (hint) {
+    if (hint === 'string') {
+      return this.name
+    }
+    return this.age
+  },
+}
+
+console.log(user + 10)
