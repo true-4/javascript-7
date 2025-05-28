@@ -80,3 +80,13 @@ const areNumbersEqual = (a, b) => { return +a === +b }
 console.log(areNumbersEqual("10.000", "10"))
 console.log(areNumbersEqual("5.5", "5.50"))
 console.log(areNumbersEqual("1", "2"))
+
+// 11
+const parseAndRound = (value) => {
+  const newValue = +value
+  return newValue.toFixed()
+}
+
+console.log(parseAndRound("42.7"))
+console.log(parseAndRound("5.2"))
+console.log(parseAndRound("hello"))
