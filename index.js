@@ -63,3 +63,20 @@ function formatNumber(num) {
 console.log(formatNumber(1234.56789))
 console.log(formatNumber(0.1 + 0.2))
 console.log(formatNumber(10))
+
+// 9 TO DOO
+// function extractPrice(str) {
+//   const newStr = str.match(/(\d+\s*\.?\s*\d*)/)
+//   return newStr
+// }
+
+// console.log(extractPrice('Цена: 1 200.50 руб.'))
+// console.log(extractPrice('Сумма: 99.99р'))
+// console.log(extractPrice('Free'))
+
+// 10
+const areNumbersEqual = (a, b) => { return +a === +b }
+
+console.log(areNumbersEqual("10.000", "10"))
+console.log(areNumbersEqual("5.5", "5.50"))
+console.log(areNumbersEqual("1", "2"))
