@@ -64,15 +64,18 @@ console.log(formatNumber(1234.56789))
 console.log(formatNumber(0.1 + 0.2))
 console.log(formatNumber(10))
 
-// 9 TO DOO
-// function extractPrice(str) {
-//   const newStr = str.match(/(\d+\s*\.?\s*\d*)/)
-//   return newStr
-// }
+// 9
+const extractPrice = (str) => {
+  const newStr = str.match(/(\d[\d\s]*\.?\d*)/)
+  if (newStr && newStr.length > 0) {
+    return parseFloat(newStr[0].replace(/\s/g, ''))
+  }
+  return NaN
+}
 
-// console.log(extractPrice('Цена: 1 200.50 руб.'))
-// console.log(extractPrice('Сумма: 99.99р'))
-// console.log(extractPrice('Free'))
+console.log(extractPrice('Цена: 1 200.50 руб.'))
+console.log(extractPrice('Сумма: 99.99р'))
+console.log(extractPrice('Free'))
 
 // 10
 const areNumbersEqual = (a, b) => { return +a === +b }
