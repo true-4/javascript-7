@@ -126,3 +126,11 @@ let b = { toString() { return "1"; } };
 
 console.log(a == 1); // == неявно приводит типы данных в результате получем true
 console.log(b == 1); // == неявно приводит типы данных в результате получем true
+
+// 15
+function sumNumbers(str) {
+  const numbers = str.split(',').map(Number);
+  return numbers.reduce((acc, curr) => acc + curr, 0); 
+}
+
+console.log(sumNumbers('1, 2, 3, 4'))
